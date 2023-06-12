@@ -33,7 +33,7 @@ function informacoes() {
   let ano = Data.getFullYear();
   let semana = Data.getDay();
 
-  let semanaReal = ['Domingo', 'Segunda-Feira', 'Segunda-Feira', 'Segunda-Feira', 'Segunda-Feira', 'Segunda-Feira', 'Sábado']
+  let semanaReal = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
 
   let formatarDia = `${zeroEsquerda(dia)}/${zeroEsquerda(mes)}/${ano}`
 

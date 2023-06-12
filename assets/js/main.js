@@ -1,7 +1,8 @@
 const inputTarefa = document.querySelector('.input-tarefa');
 const btnTarefa = document.querySelector('.btn-tarefa');
 const tarefas = document.querySelector('.tarefas');
-const info = document.querySelector('.pre')
+const info = document.querySelector('.pre');
+const itemUl = document.querySelector('.itemUl')
 
 informacoes();
 
@@ -48,7 +49,9 @@ function informacoes() {
   }
 
   if (hora > 12) {
-    return Tarde();
+    Tarde();
+    
+    return 
   }
 
   if (hora > 0) {
@@ -86,11 +89,17 @@ function informacoes() {
 
   }
 
+
   function mudaFundo(fundo, letra, fundo2 = 'white') {
 
     corpo.style.background = fundo;
     corpo.style.color = letra;
     container.style.background = fundo2;
+   
+    
+   
+
+
 
   }
 
@@ -112,6 +121,7 @@ function informacoes() {
 
 function criaLi() {
   const li = document.createElement('li');
+  li.setAttribute('class', 'itemUl')
   return li;
 }
 
@@ -130,7 +140,7 @@ function limpaInput() {
 function criaBotaoApagar(li) {
   li.innerText += ' ';
   const botaoApagar = document.createElement('button');
-  botaoApagar.innerText = 'Excluir';
+  botaoApagar.innerText = 'Apagar';
   // botaoApagar.classList.add('apagar');
   botaoApagar.setAttribute('class', 'apagar');
   botaoApagar.setAttribute('title', 'Apagar esta tarefa');

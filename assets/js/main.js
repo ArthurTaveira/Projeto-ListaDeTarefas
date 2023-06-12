@@ -121,7 +121,6 @@ function informacoes() {
 
 function criaLi() {
   const li = document.createElement('li');
-  li.setAttribute('class', 'itemUl')
   return li;
 }
 
@@ -214,4 +213,8 @@ function adicionaTarefasSalvas() {
 }
 
 adicionaTarefasSalvas();
+
+
+
+//teste
 
